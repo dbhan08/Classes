@@ -1,4 +1,8 @@
-
+/*
+Following is the header file for the music class
+By: Deyvik Bhan
+Date: 11/5/19
+*/
 
 
 #include <iostream>
@@ -10,20 +14,20 @@ class music : public Media {
 music(char* title, char* artist, int year, char* duration, char* publisher);
 
 virtual int getType();
-char* getTitle();
+ int getYear();
+ char* getTitle();
 char* getArtist();
-int getYear();
-char* getDuration();
-char* getPublisher();
-
+ char* getDuration();
+ char* getPublisher();
+~music();
 
 private:
 
-char* title;
+
 char* artist;
-int year;
 char* duration;
 char* publisher;
-
+int year;
+char* title;
 
 };
